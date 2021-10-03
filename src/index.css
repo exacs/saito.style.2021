@@ -1,3 +1,97 @@
 body {
   font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.saito-style-xl {
+  font-weight: bold;
+  font-size: 4rem;
+  margin-top: -1.5rem;
+  margin-left: -0.5rem;
+  letter-spacing: -0.5rem;
+  overflow: hidden;
+}
+
+.saito-style {
+  display: inline-block;
+  height: 1.25rem;
+  vertical-align: bottom;
+  width: 7rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.saito-style span {
+  position: absolute;
+  left: -0.25rem;
+  top: -0.20rem;
+  letter-spacing: -0.25rem;
+  display: block;
+  white-space: nowrap;
+  font-size: 1.5rem;
+}
+
+.container {
+  /* line-height: 1.25rem; */
+  max-width: 100%;
+}
+
+.column-1 {
+  max-width: 20rem;
+}
+.column-2 {
+  line-height: 1.25rem;
+  max-width: 16rem;
+  background: #000;
+  color: cyan;
+  margin-left: auto;
+}
+.column-3 {
+  max-width: 14rem;
+  line-height: 1.25rem;
+  display: block;
+  border: 0.25rem solid #f00;
+  color: #f00;
+  text-decoration: none;
+}
+.column-4 {
+  max-width: 12rem;
+  margin-left: auto;
+}
+
+.column-5 {
+  display: none;
+}
+
+.number {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+@media (min-width: 62rem) {
+  .container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .column-1,
+  .column-2,
+  .column-3,
+  .column-4 {
+    flex: 0 0 auto;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 93rem) {
+  .column-5 {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .column-5 iframe {
+    width: 95%;
+    border: none;
+    height: 32rem;
+  }
 }
