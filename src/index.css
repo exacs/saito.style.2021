@@ -17,19 +17,27 @@ body {
   display: inline-block;
   height: 1.25rem;
   vertical-align: bottom;
-  width: 7rem;
+  width: 5.5rem;
   position: relative;
   overflow: hidden;
 }
 
 .saito-style span {
   position: absolute;
-  left: -0.25rem;
-  top: -0.20rem;
-  letter-spacing: -0.25rem;
+  letter-spacing: -0.125rem;
   display: block;
   white-space: nowrap;
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+
+
+.l-1 span {
+  transform: rotate(180deg);
+  transform-origin: 50% 60%;
+}
+
+.l-2 span {
+  transform: scaleX(-100%);
 }
 
 .container {
