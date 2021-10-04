@@ -36,7 +36,7 @@
         } else {
           const q2 = parseInt(q, 10);
 
-          if (q2 < 5) {
+          if (!isNaN(q2) && q2 >= 0 && q2 < 5) {
             document.write(`<iframe src="?${q2+1}"></iframe>`)
           }
         }
